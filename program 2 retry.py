@@ -4,9 +4,9 @@ from tkinter import *
 
 root=Tk()
 root.minsize(height=500,width=750) # size of the program
-
+#Tab 1 - Welcome Page
 def window_1():
-    def window_2():
+    def window_2():#page 2
         label1.destroy()
         button1.destroy()
         label2= Label(root,text='Night', font=('Century Gothic',15))
@@ -15,7 +15,8 @@ def window_1():
         button2.pack(side=BOTTOM)
         def back():
             label2.destroy()
-            button2.destroy()  
+            button2.destroy()
+            window_1()  
     label1=Label(root,text='Welcome to Sunshine Adventure Camp', font=('Century Gothic',25))
     label1.pack()
     button1=Button(root,text='Proceed',font=('Catamaran',15), bd='5', command=window_2)
@@ -25,6 +26,5 @@ def window_1():
     label1.place(x = 0, y = 0)
     frame1 = Frame(root)
     frame1.pack(pady = 20 )
-
 window_1()
 root.mainloop()
