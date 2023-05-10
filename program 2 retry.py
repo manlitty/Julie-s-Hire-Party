@@ -6,7 +6,6 @@ import tkinter as tk
 
 root=Tk()
 root.title("Camp Sunshine")
-root.iconbitmap("campsunshine.ico")
 root.minsize(height=500,width=750) # size of the program
 #Tab 1 - Welcome Page
 def window_1():
